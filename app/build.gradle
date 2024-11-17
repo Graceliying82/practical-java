@@ -10,6 +10,9 @@ plugins {
     id 'application'
 }
 
+group = 'org.graceliying'
+version = '1.0-SNAPSHOT'
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -56,4 +59,23 @@ test {
         events "passed", "skipped", "failed"
         showStandardStreams = true
     }
+}
+
+tasks.build {
+    dependsOn tasks.javadoc
+}
+
+javadoc {
+    destinationDir = file("${project.buildDir}/docs/javadoc") // Updated to use project.buildDir
+    title = "Practical Java Project"
+    options {
+        header = "Practical Java Project API Documentation"
+        footer = "Created by Grace Li- liyingbupt@gmail.com"
+    }
+}
+
+task javadocTask(type: Javadoc) {
+    source = sourceSets.main.allJava
+    classpath = sourceSets.main.compileClasspath
+    destinationDir = file("${project.buildDir}/docs/javadoc") // Updated to use project.buildDir
 }
