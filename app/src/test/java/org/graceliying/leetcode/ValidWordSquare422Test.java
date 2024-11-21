@@ -22,7 +22,9 @@ class ValidWordSquare422Test {
 
     private static Stream<Arguments> wordsList() {
         return Stream.of(
-            Arguments.of(List.of("abcd", "bnrt", "crmy", "dtye"), true)
+            Arguments.of(List.of("abcd", "bnrt", "crmy", "dtye"), true),
+            Arguments.of(List.of("abcd","bnrt","crm","dt"), true),
+            Arguments.of(List.of("ball","area","read","lady"), false)
         );
     }
 }
