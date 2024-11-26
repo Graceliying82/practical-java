@@ -7,6 +7,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.graceliying.snippets.LambdaExamples;
 
 @Slf4j
+/**
+ * Entry point for the Java application.
+ * <p>
+ * This class demonstrates how to run Java code snippets, including examples
+ * using lambda expressions or other runnable tasks.
+ */
 public class App {
 
     public static void main(String[] args) {
