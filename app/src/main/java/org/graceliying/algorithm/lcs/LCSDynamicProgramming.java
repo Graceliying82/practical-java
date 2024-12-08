@@ -1,4 +1,4 @@
-package org.graceliying.algorithm;
+package org.graceliying.algorithm.lcs;
 
 public class LCSDynamicProgramming {
     // DP function to calculate LCS

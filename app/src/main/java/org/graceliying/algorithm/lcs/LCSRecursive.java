@@ -1,4 +1,4 @@
-package org.graceliying.algorithm;
+package org.graceliying.algorithm.lcs;
 
 public class LCSRecursive {
 
