@@ -35,6 +35,9 @@ dependencies {
     // Other dependencies
     implementation 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    // Selenium WebDriver
+    implementation 'org.seleniumhq.selenium:selenium-java:4.28.1'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
