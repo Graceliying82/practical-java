@@ -38,6 +38,15 @@ dependencies {
 
     // Selenium WebDriver
     implementation 'org.seleniumhq.selenium:selenium-java:4.28.1'
+
+    // Kafka-Client
+    implementation 'org.apache.kafka:kafka-clients:3.5.1'
+    // Kafka stream
+    implementation 'org.apache.kafka:kafka-streams:3.5.1'
+    // prometheus
+    implementation 'io.prometheus:simpleclient:0.16.0'
+    implementation 'io.prometheus:simpleclient_hotspot:0.16.0'
+    implementation 'io.prometheus:simpleclient_httpserver:0.16.0'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
