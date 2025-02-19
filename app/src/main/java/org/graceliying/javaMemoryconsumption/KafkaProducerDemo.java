@@ -6,6 +6,11 @@ import org.apache.kafka.clients.producer.*;
 public class KafkaProducerDemo {
     private static final String TOPIC = "cpu-mem-demo";
 
+    public static void main(String[] args) {
+        simulateCpuLoad();
+        produceMessages();
+    }
+
     public static void startKafka() {
         simulateCpuLoad();
         produceMessages();
